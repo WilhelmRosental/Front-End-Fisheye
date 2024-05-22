@@ -1,0 +1,127 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 6rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+:focus {
+  outline: 3px solid #d3573c;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 8rem;
+}
+
+h1 {
+  color: #901c1c;
+  text-align: center;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.photographer_section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem 2rem;
+  margin: 5rem 0;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20rem;
+  flex: 1 0 29%;
+}
+
+.user-card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.user-card__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-card__name {
+  color: #d3573c;
+  font-size: 2.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.user-card__picture {
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 10rem;
+  object-fit: cover;
+}
+
+.user-card__paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.19rem;
+  text-align: center;
+}
+
+.user-card__localization {
+  font-size: 0.8125rem;
+  color: #901c1c;
+}
+.user-card__tagline {
+  font-size: 0.625rem;
+  color: black;
+}
+.user-card__price {
+  font-size: 0.5625rem;
+  color: #757575;
+}
+
+@media screen and (max-width: 767.98px) {
+  html {
+    font-size: 75%;
+  }
+  body {
+    padding: 0 1.25rem;
+  }
+  .main-header {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    height: 8rem;
+  }
+}

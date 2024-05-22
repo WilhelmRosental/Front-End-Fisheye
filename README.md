@@ -1,6 +1,9 @@
 # Base de code du projet P6 - Parcours Front-end
 
-## Démarrer le projet
+## Build le projet
 
-Rien à installer ici, il suffit d'ouvrir le fichier `index.html`.
+```npm run build```
 
+## Démarrer le serveur webpack
+
+```npm start```
