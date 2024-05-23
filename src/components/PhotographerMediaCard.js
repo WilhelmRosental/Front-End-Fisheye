@@ -66,10 +66,6 @@ export class PhotographerMediaCard {
     const $inputliked = document.getElementById(`like${index}`)
     const $likeTextContent = document.getElementById(`nbrLike${index}`)
     if (this._arrayStorage.includes(this._photographer[index].id)) {
-      // --> inputliked.checked pas pris en compte suite du code
-      // $inputliked.checked = true
-      // console.log($inputliked.checked)
-
       $inputliked.setAttribute('checked', 'checked')
       this.addLike($likeTextContent)
     }
@@ -77,14 +73,14 @@ export class PhotographerMediaCard {
 
   updateLike() {
     const displayNewTotalLikes = new PhotographerInfo()
-    // --> Cible les label like du DOM
+    // Cible les label like du DOM
     const $updateLike = document.querySelectorAll('.media-card__label')
     $updateLike.forEach((label, index) => {
       this.toggleCheckbox(label, index, displayNewTotalLikes)
       this.enterCheckbox(label, index, displayNewTotalLikes)
     })
 
-    //  --> Changement du conteneur total like
+    // Changement du conteneur total like
     displayNewTotalLikes.updateInfo(this.totalLikes)
   }
 

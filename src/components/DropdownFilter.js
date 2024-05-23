@@ -82,12 +82,10 @@ export class MediaFilterDropdown {
 
   attachEvents() {
     this.optionsList.forEach((option) => {
-      let isHandling = false // Ajoutez un drapeau
+      let isHandling = false
 
       function handler(e) {
-        // ==> /!\ Problème la fonction tourne 2fois quand on click !
-        //
-        if (isHandling) return // Si déjà en train de gérer, ne fait rien
+        if (isHandling) return 
         const label = option.querySelector('label')
         if (
           e.key === 'Enter' ||
@@ -95,9 +93,9 @@ export class MediaFilterDropdown {
         ) {
           this.$selectedValue.textContent = label.textContent
           this.$customSelect.classList.remove('active')
-          isHandling = true // Défini le drapeau traitement est en cours
+          isHandling = true
           setTimeout(() => {
-            isHandling = false // Réinitialise le drapeau après un court délai
+            isHandling = false
           }, 100)
 
           new SortFilters(label.textContent)

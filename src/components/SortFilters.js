@@ -1,9 +1,3 @@
-// ------------------------------------------------------------------------------
-// Système pour trier
-// ------------------------------------------------------------------------------
-//  --> Je stock mes valeurs à réutiliser
-//      -> l'ensemble des medias à réorganisé
-//      -> l'instance pour lancer l'update
 export class InitData {
   static data = []
   static getData() {

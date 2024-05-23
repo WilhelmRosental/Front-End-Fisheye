@@ -83,6 +83,7 @@ export class Lightbox {
     const firstFocusElement = focusElementsArray[0]
     const lastFocusElement = focusElementsArray[focusElementsArray.length - 1]
 
+    // Gestion des events comme demandé avec KeyboardEvent.key ou KeyboardEvent.keyCode
     if (
       $lightbox.getAttribute('aria-hidden') === 'false' &&
       e.key === 'Escape'
