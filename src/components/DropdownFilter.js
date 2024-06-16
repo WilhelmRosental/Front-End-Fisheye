@@ -15,7 +15,7 @@ export class DropdownFilter {
   createDropdownFilter() {
     const filter = `
         
-    <p class="filter-title">Trier par</p>
+    <h4 class="filter-title">Trier par</h4>
 
     <div class="filter-media">
         <button 
@@ -25,7 +25,7 @@ export class DropdownFilter {
             aria-haspopup="listbox"
             aria-expanded="false"
             aria-controls="filter-dropdown">
-                <span class="filter-selected">Choisir</span>
+                <span class="filter-selected">Popularité</span>
                 <span class="filter-arrow"></span>
         </button>
         <ul class="filter-dropdown" role="listbox" id="filter-dropdown">
@@ -55,7 +55,8 @@ export class DropdownFilter {
     new MediaFilterButton()
   }
 }
-// -----------------------------------------------------------------------------------------------
+
+
 export class MediaFilterButton {
   constructor() {
     this.$selectBtn = document.querySelector('.filter-button')
@@ -69,7 +70,8 @@ export class MediaFilterButton {
     })
   }
 }
-// -----------------------------------------------------------------------------------------------
+
+
 export class MediaFilterDropdown {
   constructor(selectBtn) {
     this.selectBtn = selectBtn

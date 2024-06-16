@@ -10,7 +10,7 @@ export class InitData {
 }
 
 export class SortFilters {
-  constructor(typeFilter) {
+  constructor(typeFilter = 'Popularité') {
     this._typeFilter = typeFilter
     this._filteredMedia = []
 

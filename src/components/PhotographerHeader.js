@@ -14,9 +14,9 @@ export class PhotographerHeader {
     const photographerCard = `
           
         <section class="photograph-header__text">
-            <h2 class="photograph-header__title">${this._photographer.name}</h2>
-            <p class="photograph-header__localization">${this._photographer.city}, ${this._photographer.country}</p>
-            <p class="photograph-header__desc">${this._photographer.tagline}</p>
+            <h1 class="photograph-header__title">${this._photographer.name}</h1>
+            <h2 class="photograph-header__localization">${this._photographer.city}, ${this._photographer.country}</h2>
+            <h3 class="photograph-header__desc">${this._photographer.tagline}</h3>
         </section>
         <button
             class="contact-button"
