@@ -1,11 +1,11 @@
 class VideoCard {
-  constructor(likeId) {
-    this._likeId = likeId
-    this.$mediaContainer = document.querySelector('.media-container')
-  }
+    constructor(likeId) {
+        this._likeId = likeId;
+        this.$mediaContainer = document.querySelector('.media-container');
+    }
 
-  createMedia(photographer) {
-    const mediaCard = `
+    createMedia(photographer) {
+        const mediaCard = `
           <article class="media-card" >
             <video 
                 src="${photographer.picture}" 
@@ -41,9 +41,9 @@ class VideoCard {
             </div>
         </article>
                 
-                `
-    this.$mediaContainer.innerHTML += mediaCard
+                `;
+        this.$mediaContainer.innerHTML += mediaCard;
 
-    return this.$mediaContainer
-  }
+        return this.$mediaContainer;
+    }
 }

@@ -1,17 +1,17 @@
 class PhotographerCard {
-  constructor(photographer) {
-    this._photographer = photographer
+    constructor(photographer) {
+        this._photographer = photographer;
 
-    this.$wrapper = document.createElement('article')
-    this.$wrapper.classList.add('user-card')
-  }
+        this.$wrapper = document.createElement('article');
+        this.$wrapper.classList.add('user-card');
+    }
 
-  get photographer() {
-    return this._photographer
-  }
+    get photographer() {
+        return this._photographer;
+    }
 
-  createPhotographerCard() {
-    const photographerCard = `
+    createPhotographerCard() {
+        const photographerCard = `
         
             <header class="user-card__header">
               <a href="${this._photographer.url}" 
@@ -32,9 +32,9 @@ class PhotographerCard {
                 <p class="user-card__price">${this._photographer.price}€/jour</p>
             </section>
         
-        `
-    this.$wrapper.innerHTML = photographerCard
+        `;
+        this.$wrapper.innerHTML = photographerCard;
 
-    return this.$wrapper
-  }
+        return this.$wrapper;
+    }
 }

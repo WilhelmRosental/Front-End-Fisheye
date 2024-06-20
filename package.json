@@ -4,12 +4,16 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=3000 --host=localhost"
+    "lint": "npx eslint --config eslint.config.cjs . --fix"
   },
   "keywords": [],
   "author": "Nathan Hallouin",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "eslint": "^9.5.0",
+    "eslint-plugin-unicorn": "^54.0.0"
   }
 }

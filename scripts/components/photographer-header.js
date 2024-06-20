@@ -1,17 +1,17 @@
 class PhotographerHeader {
-  constructor(photographer) {
-    this._photographer = photographer
+    constructor(photographer) {
+        this._photographer = photographer;
 
-    this.$wrapper = document.createElement('div')
-    this.$wrapper.classList.add('photograph-header')
-  }
+        this.$wrapper = document.createElement('div');
+        this.$wrapper.classList.add('photograph-header');
+    }
 
-  get photographer() {
-    return this._photographer
-  }
+    get photographer() {
+        return this._photographer;
+    }
 
-  createHeader() {
-    const photographerCard = `
+    createHeader() {
+        const photographerCard = `
           
         <section class="photograph-header__text">
             <h1 class="photograph-header__title">${this._photographer.name}</h1>
@@ -32,9 +32,9 @@ class PhotographerHeader {
             class="user-card__picture"
         />
           
-          `
-    this.$wrapper.innerHTML = photographerCard
+          `;
+        this.$wrapper.innerHTML = photographerCard;
 
-    return this.$wrapper
-  }
+        return this.$wrapper;
+    }
 }
