@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
+    rel="stylesheet" />
+  <link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+  <title>Fisheye</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <header class="main-header">
+      <a href="/" aria-label="Navigation to homepage" tabindex="0">
+        <img src="assets/images/logo.png" class="logo" alt="Fisheye Home page" />
+      </a>
+    </header>
+    <main id="main" aria-hidden="false"></main>
+  </div>
+
+  <script src="./scripts/api/Api.js"></script>
+
+  <script src="./scripts/factories/PhotographersFactory.js"></script>
+  <script src="./scripts/factories/MediaFactory.js"></script>
+
+  <script src="./scripts/models/PhotographerProfil.js"></script>
+  <script src="./scripts/models/PhotographerMedia.js"></script>
+  <script src="./scripts/models/PhotographerData.js"></script>
+
+  <script src="./scripts/components/PhotographerHeader.js"></script>
+  <script src="./scripts/components/PhotographerMediaCard.js"></script>
+  <script src="./scripts/components/DropdownFilter.js"></script>
+  <script src="./scripts/components/PhotographerInfo.js"></script>
+  <script src="./scripts/components/ImageCard.js"></script>
+  <script src="./scripts/components/VideoCard.js"></script>
+  <script src="./scripts/components/SortFilters.js"></script>
+  <script src="./scripts/components/ContactForm.js"></script>
+  <script src="./scripts/components/Lightbox.js"></script>
+
+  <script src="./scripts/pages/photographer.js"></script>
+</body>
+
+</html>

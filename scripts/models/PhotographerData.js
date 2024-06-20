@@ -1,7 +1,7 @@
 /**
  * @brief Singleton pattern (one instance of this class)
  */
-export class PhotographerData {
+class PhotographerData {
   constructor(data) {
     if (PhotographerData.exists) {
       return PhotographerData.instance

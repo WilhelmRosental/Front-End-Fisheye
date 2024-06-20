@@ -1,4 +1,4 @@
-export class ContactForm {
+class ContactForm {
   constructor(userData) {
     this._userData = userData
 
@@ -110,7 +110,7 @@ export class ContactForm {
 
   /**
    * @brief handle focus
-   * @param {*} $modal 
+   * @param {*} $modal
    */
   focusModal($modal) {
     // get focusable elements

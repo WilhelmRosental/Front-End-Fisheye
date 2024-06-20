@@ -1,4 +1,4 @@
-export class VideoCard {
+class VideoCard {
   constructor(likeId) {
     this._likeId = likeId
     this.$mediaContainer = document.querySelector('.media-container')

@@ -1,7 +1,7 @@
 /**
  * @brief object representing a photographer media
  */
-export class PhotographerMedia {
+class PhotographerMedia {
   constructor(data) {
     this._date = data.date
     this._id = data.id

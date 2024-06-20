@@ -1,11 +1,8 @@
-import { ImageCard } from '../components/ImageCard.js'
-import { VideoCard } from '../components/VideoCard.js'
-
 /**
  * @brief Creating Image or Video Card
  * @class MediaFactory
  */
-export class MediaFactory {
+class MediaFactory {
   constructor(data, type, likeId) {
     if (type === 'image') {
       new ImageCard(likeId).createMedia(data)

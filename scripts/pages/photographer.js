@@ -1,19 +1,3 @@
-import { PhotographerData } from '../models/PhotographerData'
-import { PhotographerProfil } from '../models/PhotographerProfil'
-import { Api } from '../api/Api'
-import { PhotographerHeader } from '../components/PhotographerHeader'
-import { PhotographerInfo } from '../components/PhotographerInfo'
-import { DropdownFilter } from '../components/DropdownFilter'
-import { PhotographerMedia } from '../models/PhotographerMedia'
-import { PhotographerMediaCard } from '../components/PhotographerMediaCard'
-import { ContactForm } from '../components/ContactForm'
-import { Lightbox } from '../components/Lightbox'
-import { InitData } from '../components/SortFilters';
-
-import '../styles/style.css';
-import '../styles/photographer.css';
-
-
 class photographer {
   constructor() {
     this.$main = document.querySelector('#main')

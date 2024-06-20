@@ -1,4 +1,4 @@
-export class ImageCard {
+class ImageCard {
   constructor(likeId) {
     this._likeId = likeId
     this.$mediaContainer = document.querySelector('.media-container')

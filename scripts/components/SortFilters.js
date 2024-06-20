@@ -1,4 +1,4 @@
-export class InitData {
+class InitData {
   static data = []
   static getData() {
     return this.data
@@ -9,7 +9,7 @@ export class InitData {
   }
 }
 
-export class SortFilters {
+class SortFilters {
   constructor(typeFilter = 'Popularité') {
     this._typeFilter = typeFilter
     this._filteredMedia = []

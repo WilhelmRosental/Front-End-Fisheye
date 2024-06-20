@@ -1,12 +1,6 @@
-import './styles/style.css';
-
-import { PhotographersFactory } from './factories/PhotographersFactory';
-import { PhotographerCard } from './components/PhotographerCard';
-import { Api } from './api/Api'
-
 class App {
   constructor() {
-    this.photographersApi = new Api('../data/photographers.json').get()
+    this.photographersApi = new Api('./data/photographers.json').get()
     this.$addDom = document.querySelector('.photographer_section')
   }
   
@@ -17,6 +11,8 @@ class App {
       photographersData,
       'photographers'
     )
+
+    console.log('PHOTOGRAPHERS', Photographers)
 
     Photographers.forEach((photographer) => {
       const TemplateCard = new PhotographerCard(photographer)

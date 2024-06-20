@@ -1,4 +1,4 @@
-export class PhotographerHeader {
+class PhotographerHeader {
   constructor(photographer) {
     this._photographer = photographer
 

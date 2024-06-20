@@ -1,4 +1,4 @@
-export class PhotographerInfo {
+class PhotographerInfo {
   constructor() {
     this._totalLike = 0
 
@@ -15,6 +15,8 @@ export class PhotographerInfo {
         
         <img
           class="photographer-info__likesIcon"
+          src="./assets/icons/heart-black.svg"
+          alt="icon des likes"
         />
       </div>
       <p class="photographer-info__price">${PhotographerInfo.price}€ / jour</p>

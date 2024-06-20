@@ -1,7 +1,7 @@
 /**
  * @brief object representing a photographer profil
  */
-export class PhotographerProfil {
+class PhotographerProfil {
   constructor(data) {
     this._name = data.name
     this._portrait = data.portrait

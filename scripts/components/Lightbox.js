@@ -1,4 +1,4 @@
-export class Lightbox {
+class Lightbox {
   constructor() {
     this.$body = document.querySelector('body')
     this.$mainDom = document.querySelector('main')

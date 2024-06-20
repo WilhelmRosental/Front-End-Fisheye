@@ -1,3 +1,5 @@
+@import url('photographer.css');
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -103,11 +105,11 @@ h1 {
   color: #901c1c;
 }
 .user-card__tagline {
-  font-size: 0.625rem;
+  font-size: 0.825rem;
   color: black;
 }
 .user-card__price {
-  font-size: 0.5625rem;
+  font-size: 0.7625rem;
   color: #757575;
 }
 

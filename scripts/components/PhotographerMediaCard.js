@@ -1,7 +1,4 @@
-import { MediaFactory } from '../factories/MediaFactory.js'
-import { PhotographerInfo } from './PhotographerInfo.js'
-
-export class PhotographerMediaCard {
+class PhotographerMediaCard {
   constructor(photographer) {
     this._photographer = photographer
     this._likeId = 0

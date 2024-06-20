@@ -1,6 +1,4 @@
-import { SortFilters } from './SortFilters.js'
-
-export class DropdownFilter {
+class DropdownFilter {
   constructor() {
     this.$wrapper = document.createElement('div')
     this.$wrapper.classList.add('filter-container')
@@ -57,7 +55,7 @@ export class DropdownFilter {
 }
 
 
-export class MediaFilterButton {
+class MediaFilterButton {
   constructor() {
     this.$selectBtn = document.querySelector('.filter-button')
     this.attachClickEvent()
@@ -72,7 +70,7 @@ export class MediaFilterButton {
 }
 
 
-export class MediaFilterDropdown {
+class MediaFilterDropdown {
   constructor(selectBtn) {
     this.selectBtn = selectBtn
     this.$selectedValue = document.querySelector('.filter-selected')
